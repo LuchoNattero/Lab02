@@ -1,4 +1,4 @@
-#Sun Oct 08 11:42:57 ART 2017
+#Sun Oct 08 12:36:03 ART 2017
 base.0=C\:\\Users\\User\\AndroidStudioProjects\\Lab022 - copia\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\Users\\User\\AndroidStudioProjects\\Lab022 - copia\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
