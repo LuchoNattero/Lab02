@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Pedite la cena!!"
+        android:textSize="20sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textOff="Reservar mesa"
+        android:textOn="Delivery" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione horario"
+        android:layout_margin="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp01"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_centerHorizontal="true">
+    </Spinner>
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar 1 hora antes"/>
+
+    <TextView
+        android:id="@+id/datos_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Datos del pedido"/>
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:id="@+id/radio_plato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plato"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radio_postre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postre"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radio_bebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bebida"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/boton_agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"/>
+        <Button
+            android:id="@+id/boton_confirmar_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar pedido"/>
+        <Button
+            android:id="@+id/boton_reiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reiniciar"/>
+    </RadioGroup>
+
+
+        <ListView
+            android:id="@+id/lvScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+<!-- poner el linerlayout si queres rodri -->
+
+</LinearLayout>
+
+
+<!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="MainActivity"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Pedite la cena!!"
+        android:textSize="20sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textOff="Reservar mesa"
+        android:textOn="Delivery" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione horario"
+        android:layout_margin="10dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp01"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvTitulo"
+        android:layout_centerHorizontal="true">
+    </Spinner>
+<Switch
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Reservar 1 hora antes"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos del pedido"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plato"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postre"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bebida"/>
+</RadioGroup>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar pedido"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reiniciar"/>
+    </RadioGroup>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+       <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+       </ListView>
+</ScrollView>
+
+</LinearLayout>
+</RelativeLayout>
+-->
