@@ -16,7 +16,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Enumeration;
 
 
 public  class MainActivity extends AppCompatActivity implements  View.OnClickListener , AdapterView.OnItemClickListener{
@@ -214,8 +213,6 @@ public  class MainActivity extends AppCompatActivity implements  View.OnClickLis
         savedInstanceState.putBoolean(clave_principal,principal);
 
         savedInstanceState.putDouble(clave_total,total);
-//      savedInstanceState.putInt();
-
     }
 
     @Override

@@ -2329,12 +2329,12 @@ containing a value of this type.
         public static final int always=0x7f0c0025;
         public static final int basic=0x7f0c000f;
         public static final int beginning=0x7f0c0022;
+        public static final int boton_Cancelar=0x7f0c0071;
+        public static final int boton_Confirmar=0x7f0c0070;
         public static final int boton_agregar=0x7f0c0067;
         public static final int boton_confirmar_pedido=0x7f0c0068;
         public static final int boton_reiniciar=0x7f0c0069;
         public static final int bottom=0x7f0c002a;
-        public static final int btnCancelar=0x7f0c0071;
-        public static final int btnConfirmar=0x7f0c0070;
         public static final int buttonPanel=0x7f0c0036;
         public static final int cancel_action=0x7f0c0076;
         public static final int chains=0x7f0c0010;

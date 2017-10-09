@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.lrnl.lab02.R;
+import android.content.Intent;
 
 public class pago_pedido extends AppCompatActivity implements View.OnClickListener {
 
@@ -24,18 +23,17 @@ public class pago_pedido extends AppCompatActivity implements View.OnClickListen
         edit_text_fecha = (EditText) findViewById(R.id.etFecha);
         edit_text_tarjeta = (EditText) findViewById(R.id.etTarjeta);
 
-        findViewById(R.id.btnConfirmar).setOnClickListener(this);
-        findViewById(R.id.btnCancelar).setOnClickListener(this);
+        findViewById(R.id.boton_Confirmar).setOnClickListener(this);
+        findViewById(R.id.boton_Cancelar).setOnClickListener(this);
 
 
     }
-
-
-    protected void OnClick(View v){
+    @Override
+    public void onClick(View v){
 
         switch (v.getId()){
 
-            case R.id.btnConfirmar:
+            case R.id.boton_Confirmar:
 
                 if(edit_text_nombre.getText().toString().isEmpty()){
 
@@ -54,22 +52,26 @@ public class pago_pedido extends AppCompatActivity implements View.OnClickListen
 
                     Toast.makeText(getApplicationContext(), "Debe completar el campo", Toast.LENGTH_SHORT).show();
                 }
-                else if(edit_text_tarjeta.getText().toString().isEmpty()){
+                else if (edit_text_tarjeta.getText().toString().isEmpty()) {
 
-                    Toast.makeText(getApplicationContext(), "Debe completar el campo", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Debe completar el campo", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "El pedido a sido confirmado", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(pago_pedido.this, MainActivity.class);
+                    startActivity(intent);
+
                 }
 
                 break;
 
-            case R.id.btnCancelar:
+            case R.id.boton_Cancelar:
+
+                Toast.makeText(getApplicationContext(),"El pedido a sido cancelado",Toast.LENGTH_SHORT).show();
+
 
                 break;
         }
-
-    }
-
-    @Override
-    public void onClick(View view) {
 
     }
 }

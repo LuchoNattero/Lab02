@@ -592,12 +592,12 @@ int id all 0x7f0c000e
 int id always 0x7f0c0025
 int id basic 0x7f0c000f
 int id beginning 0x7f0c0022
+int id boton_Cancelar 0x7f0c0071
+int id boton_Confirmar 0x7f0c0070
 int id boton_agregar 0x7f0c0067
 int id boton_confirmar_pedido 0x7f0c0068
 int id boton_reiniciar 0x7f0c0069
 int id bottom 0x7f0c002a
-int id btnCancelar 0x7f0c0071
-int id btnConfirmar 0x7f0c0070
 int id buttonPanel 0x7f0c0036
 int id cancel_action 0x7f0c0076
 int id chains 0x7f0c0010

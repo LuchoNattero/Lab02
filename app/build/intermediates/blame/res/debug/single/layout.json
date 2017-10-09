@@ -16,12 +16,12 @@
         "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
         "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022 - copia\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
@@ -172,12 +172,12 @@
         "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022 - copia\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
         "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\usuario\\.android\\build-cache\\aa3f486175537583a57b4d9cf3399b56870c4bf3\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\Users\\usuario\\AndroidStudioProjects\\Lab022 - copia\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
