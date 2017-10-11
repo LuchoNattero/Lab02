@@ -15,12 +15,13 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.widget.ToggleButton;
 
 
 public  class MainActivity extends AppCompatActivity implements  View.OnClickListener , AdapterView.OnItemClickListener{
 
     private Spinner horarios;
+    private ToggleButton delivery;
     private ListView listaElementos;
     private ArrayAdapter<Utils.ElementoMenu> adaptador;
     private Utils uti;
@@ -34,6 +35,7 @@ public  class MainActivity extends AppCompatActivity implements  View.OnClickLis
     private String clave_postre = "cave_postre";
     private String clave_principal = "clave_principal";
     private String clave_total = "clave_total";
+
 
 
 
@@ -52,13 +54,15 @@ public  class MainActivity extends AppCompatActivity implements  View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         findViewById(R.id.boton_agregar).setOnClickListener(this);
         findViewById(R.id.boton_confirmar_pedido).setOnClickListener(this);
         findViewById(R.id.boton_reiniciar).setOnClickListener(this);
 
         //------------------------------------------ADAPTADOR HORA----------------------------------
 
-
+        delivery = (ToggleButton)findViewById(R.id.toggleButton4) ;
         horarios = (Spinner) findViewById(R.id.sp01);
 
         ArrayAdapter<CharSequence> adaptador_horario = ArrayAdapter.createFromResource(this, R.array.horarios, android.R.layout.simple_spinner_item);
@@ -161,9 +165,12 @@ public  class MainActivity extends AppCompatActivity implements  View.OnClickLis
                     pedido_confirmado = true;
                     //texto_pedidos.append("---------------------------" + '\n' + "TOTAL = $" + Math.round(total*100d)/100d);
                     pedido.setCosto(total);
+                    pedido.setHoraEntrega(horarios.getSelectedItem().toString());
+                    pedido.setEsDelivery(delivery.isChecked());
                     //Toast.makeText(getApplicationContext(), "El pedido ha sido realizado", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, pago_pedido.class);
-                    startActivity(intent);
+                    intent.putExtra("pedido",pedido);
+                    startActivityForResult(intent,1);
                 }
                 else
                     Toast.makeText(getApplicationContext(), "Debe agregar un pedido", Toast.LENGTH_SHORT).show();
