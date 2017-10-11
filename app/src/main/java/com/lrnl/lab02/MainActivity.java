@@ -162,7 +162,7 @@ public  class MainActivity extends AppCompatActivity implements  View.OnClickLis
 
             case  R.id.boton_confirmar_pedido:
                 if(elemento_selecionado != null) {
-                    pedido_confirmado = true;
+                  //  pedido_confirmado = true;
                     //texto_pedidos.append("---------------------------" + '\n' + "TOTAL = $" + Math.round(total*100d)/100d);
                     pedido.setCosto(total);
                     pedido.setHoraEntrega(horarios.getSelectedItem().toString());
@@ -240,5 +240,33 @@ public  class MainActivity extends AppCompatActivity implements  View.OnClickLis
         return adaptador;
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if(resultCode == 1){
+
+            if(requestCode == RESULT_OK){
+
+                pedido_confirmado = true;
+
+                Tarjeta tarjeta = (Tarjeta) data.getSerializableExtra("tarjeta");
+                pedido = (Pedido) data.getSerializableExtra("pedido");
+                pedido.setNombreCliente(tarjeta.getNombre());
+                pedido.setEmail(tarjeta.getCorreo());
+
+                Toast.makeText(getApplicationContext(), "Total a pagar: $"+ pedido.getCosto(), Toast.LENGTH_SHORT).show();
+            }
+
+
+        }
+        else if(requestCode == RESULT_CANCELED){
+
+            Toast.makeText(getApplicationContext(), "El pedido a sido cancelado", Toast.LENGTH_SHORT).show();
+
+
+        }
+
+
+    }
 
 }
